@@ -90,9 +90,9 @@ in
 
       mesonFlags = builtins.concatLists [
         ["-Dauto_features=disabled"]
-        "-Dxwayland=enabled"
-        "-Dlegacy_renderer=enabled"
-        "-Dsystemd=enabled"
+        ["-Dxwayland=enabled"]
+        ["-Dlegacy_renderer=enabled"]
+        ["-Dsystemd=enabled"]
       ];
 
       patches = [
